@@ -1,0 +1,1 @@
+ALTER TABLE `users` MODIFY COLUMN `salt` text NOT NULL;

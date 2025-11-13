@@ -1,35 +1,3 @@
-Build project:
-
-```
-npm run build
-npm run start
-```
-
-Kiểm tra ESLint/Prettier error:
-
-```
-npm run lint
-npm run prettier
-```
-
-Tự động fix eslint/prettier:
-
-```
-npm run lint:fix
-npm run prettier:fix
-```
-
-Giải thích các thư mục:
-
-```
-dist: Thư mục chứa các file build
-src: Thư mục chứa mã nguồn
-src/constants: Chứa các file chứa các hằng số
-src/middlewares: Chứa các file chứa các hàm xử lý middleware, như validate, check token, ...
-src/controllers: Chứa các file nhận request, gọi đến service để xử lý logic nghiệp vụ, trả về response
-src/services: Chứa các file chứa method gọi đến database để xử lý logic nghiệp vụ
-src/models: Chứa các file chứa các model
-src/routes: Chứa các file chứa các route
-src/utils: Chứa các file chứa các hàm tiện ích, như mã hóa, gửi email, ...
-Còn lại là những file config cho project như .eslintrc, .prettierrc, ...
-```
+Create a public folder in your root project
+Run the command: npm run <command_name> with command_name in package.json
+Example: npm run task:add

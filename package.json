@@ -1,5 +1,5 @@
 {
-  "name": "nodejs-typescript",
+  "name": "task-cli",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,13 +11,12 @@
     "lint:fix": "eslint . --fix",
     "prettier": "prettier --check .",
     "prettier:fix": "prettier --write .",
-    "db:seed": "tsx ./src/models/seed.ts",
-    "db:generate": "drizzle-kit generate --config=./src/models/drizzle.config.ts",
-    "db:migrate": "drizzle-kit migrate --config=./src/models/drizzle.config.ts",
-    "db:migration": "npm run db:generate && npm run db:migrate",
-    "db:drop-migrations": "drizzle-kit drop --config=./src/models/drizzle.config.ts",
-    "db:up-migration": "drizzle-kit up:mysql --out=./src/models/drizzle",
-    "db:studio": "drizzle-kit studio --config=./src/models/drizzle.config.ts"
+    "task:add": "tsx src/script/add.ts",
+    "task:update": "tsx src/script/update.ts",
+    "task:delete": "tsx src/script/delete.ts",
+    "task:mark-in-progress": "tsx src/script/markInProgress.ts",
+    "task:mark-done": "tsx src/script/markDone.ts",
+    "task:list": "tsx src/script/list.ts"
   },
   "keywords": [],
   "author": "",
@@ -54,6 +53,7 @@
     "morgan": "^1.10.0",
     "mysql2": "^3.11.0",
     "socket.io": "^4.7.5",
+    "tsx": "^4.20.6",
     "zod": "^3.23.8"
   }
 }
